@@ -14,14 +14,16 @@ This lab demonstrates how to discover and exploit a **boolean-based blind SQL in
 
 ## 🚀 Steps Performed
 
-### 1. Started Juice Shop
+## 1. Started Juice Shop
+
 bash
 
 sudo docker run --rm -p 3000:3000 bkimminich/juice-shop
 
 Juice Shop accessible at: http://localhost:3000
 
-### 2. Found SQLi Vulnerability
+## 2. Found SQLi Vulnerability
+
 Searched for a product in the Juice Shop search bar using '
 
 Captured the backend request: GET /rest/products/search?q=
