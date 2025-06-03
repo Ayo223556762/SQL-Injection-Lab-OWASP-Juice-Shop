@@ -24,10 +24,7 @@ Juice Shop accessible at: http://localhost:3000
 ### 2. Found SQLi Vulnerability
 Searched for a product in the Juice Shop search bar using '
 
-Captured the backend request:
-
-sql
-GET /rest/products/search?q=
+Captured the backend request: GET /rest/products/search?q=
 
 Used Firefox Dev Tools → “Copy as cURL” → converted into raw HTTP request (juice-request.txt)
 
